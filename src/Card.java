@@ -1,10 +1,17 @@
 public class Card {
-    private int point;
     private String suit;
-    private String rank;
+    private int value;
 
-    public Card(String suit, String rank){
+    public Card(int value, String suit) {
+        this.value = value;
         this.suit = suit;
-        this.rank = rank;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public String getSuit(){
+        return suit;
     }
 }
